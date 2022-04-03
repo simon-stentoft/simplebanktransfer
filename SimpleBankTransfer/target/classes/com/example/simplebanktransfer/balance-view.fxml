@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="982.0" prefWidth="903.0" style="-fx-background-color: deepskyblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simplebanktransfer.Controller">
+   <children>
+      <Text layoutX="397.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simple Bank">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="397.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance page">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="222.0" layoutY="635.0" mnemonicParsing="false" onAction="#switchToLogInView" prefHeight="38.0" prefWidth="100.0" text="Logout" />
+      <Button fx:id="switchSceneToTransferMoneyButton" layoutX="582.0" layoutY="636.0" mnemonicParsing="false" onAction="#switchToTransferPage" prefHeight="36.0" prefWidth="100.0" text="Transfer Money" />
+      <Text layoutX="582.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DKK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="balanceLabel" contentDisplay="CENTER" layoutX="322.0" layoutY="276.0" prefHeight="36.0" prefWidth="259.0" />
+      <Button fx:id="refreshButton" layoutX="424.0" layoutY="395.0" mnemonicParsing="false" onAction="#displayBalance" text="Refresh" />
+   </children>
+</Pane>
